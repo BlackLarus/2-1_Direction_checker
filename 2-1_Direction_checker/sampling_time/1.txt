@@ -1,0 +1,45 @@
+function direction = fcn(mid, right)
+limitTime = 3;
+arr = [false, false];
+arr(1) = mid;
+arr(2) = right;
+% 방향을 0으로 초기화 (0: 입력 없음, 1: 오른쪽, 2: 왼쪽)
+
+% 어떠한 입력이든 들어오면
+if (or(arr(1) == true, arr(2) == true))
+    % 타이머 시작
+    timerVal = tic;
+    t = toc(timerVal);
+    % 왼쪽이 켜지고 오른쪽은 꺼져 있을 때
+    if (and(arr(1) == true, arr(2) == false))
+        % 1.5초 동안 입력을 기다림
+        while(t < limitTime)
+            % 왼쪽이 켜지면
+            if(arr(2) == true)
+                % 입력 방향을 오른쪽으로 반환
+                direction = 1;
+            end
+        end
+        % 입력 시간이 지나 입력 없음으로 반환
+        direction = 0;
+        
+        % 왼쪽이 켜지고 오른쪽이 꺼져 있을 때
+    elseif (and(arr(2) == true, arr(1) == false))
+        % 1.5초 동안 입력을 기다림
+        while(t < limitTime)
+            % 오른쪽이 켜지면
+            if(arr(1) == true)
+                % 입력 방향을 왼쪽으로 반환
+                direction = 2;
+            end
+        end
+        % 입력 시간이 지나 입력 없음으로 반환
+        direction = 0;
+        
+        % 동시에 켜지거나 모두 꺼져 있을 때 또는 중간 부터 켜질 때
+    else
+        direction = 0;
+    end
+end
+direction = 0;
+end

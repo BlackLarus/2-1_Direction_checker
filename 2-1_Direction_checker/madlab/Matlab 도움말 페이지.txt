@@ -1,0 +1,23 @@
+이미지 프로세싱
+
+도로 차량 예제 :
+web(fullfile(docroot, 'images/detecting-cars-in-a-video-of-traffic.html'))
+
+pil workflow :
+https://kr.mathworks.com/company/newsletters/articles/processor-in-the-loop-simulation-on-embedded-linux-boards.html
+
+Draw shapes and lines :
+https://www.mathworks.com/help/releases/R2020b/vision/ug/draw-shapes-and-lines.html
+
+Automatically detect and recognize text in natural images :
+https://www.mathworks.com/help/releases/R2020b/vision/ug/automatically-detect-and-recognize-text-in-natural-images.html
+
+Object Detection in a Cluttered Scene Using Point Feature Matching :
+https://www.mathworks.com/help/releases/R2020b/vision/ug/object-detection-in-a-cluttered-scene-using-point-feature-matching.html
+
+
+https://www.mathworks.com/help/releases/R2020b/vision/referencelist.html?type=block&listtype=cat&category=computer-vision-with-simulink&blocktype=all&capability=
+
+https://kr.mathworks.com/videos/introduction-to-image-processing-using-simulink-82403.html?s_tid=srchtitle
+
+https://kr.mathworks.com/videos/arduino-support-in-simulink-117736.html
